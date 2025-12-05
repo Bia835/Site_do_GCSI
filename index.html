@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da Casa - Restaurante Gourmet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">🍽 Sabores da Casa</div>
+        <ul class="nav-links" id="nav-menu">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#qualidade">Qualidade</a></li>
+            <li><a href="#menu">Cardápio</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">☰</div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sabores que Encantam e Transformam Momentos</h1>
+            <p>Pratos elaborados com ingredientes frescos, técnicas refinadas e um toque especial do nosso chef, criando experiências inesquecíveis.</p>
+            <a href="#menu" class="btn">Ver Cardápio Completo</a>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+        <h2>Sobre Nós</h2>
+        <p>
+            No <strong>Sabores da Casa</strong>, acreditamos que cada refeição deve ser uma experiência sensorial completa.  
+            Nossos chefs combinam tradição e inovação, selecionando os melhores ingredientes, preparados com cuidado e criatividade.  
+            Cada prato é pensado para despertar aromas, sabores e texturas que encantam todos os sentidos.
+        </p>
+        <p>
+            Desde entradas delicadas até sobremesas marcantes, buscamos proporcionar momentos de prazer e conforto, seja em almoços familiares, jantares românticos ou encontros especiais.
+        </p>
+    </section>
+
+    <!-- QUALIDADE -->
+    <section id="qualidade" class="section">
+        <h2>Nosso Compromisso com a Qualidade</h2>
+        <p>
+            Trabalhamos com fornecedores locais e ingredientes frescos, garantindo sabor e procedência.  
+            Todas as etapas de preparo seguem padrões rigorosos de higiene, técnicas culinárias avançadas e apresentação impecável.
+        </p>
+        <p>
+            Priorizamos produtos orgânicos, carnes selecionadas, hortaliças frescas e temperos naturais, entregando pratos que respeitam tanto o paladar quanto a saúde dos nossos clientes.
+        </p>
+    </section>
+
+    <!-- CARDÁPIO DETALHADO -->
+    <section id="menu" class="produtos section">
+        <h2>Nosso Cardápio Gourmet</h2>
+        <p>Explore pratos cuidadosamente preparados, combinando sabor, aroma e apresentação em cada detalhe.</p>
+
+        <!-- MASSAS -->
+        <h3 class="categoria">🍝 Massas Artesanais</h3>
+        <div class="grid">
+            <div class="card" onclick="abrirModal(
+                'Ravióli de Ricota e Espinafre',
+                'Massa fresca artesanal recheada com ricota fresca e espinafre refogado no azeite, ao molho de manteiga noisette e lascas de parmesão. <br><br><strong>Peso:</strong> 320g <br><strong>Ingredientes:</strong> Ricota, espinafre, manteiga, parmesão, noz-moscada, pimenta branca. <br><strong>Descrição:</strong> Prato cremoso e delicado, perfeito para quem aprecia sabores suaves e equilíbrio entre massa e recheio. <br><strong>Dica:</strong> Harmoniza bem com vinho branco leve ou suco de maçã natural.'
+            )">
+                <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=800&q=80" alt="Ravióli de Ricota e Espinafre">
+                <h4>Ravióli de Ricota</h4>
+                <p>R$ 49,00</p>
+            </div>
+
+            <div class="card" onclick="abrirModal(
+                'Tagliatelle ao Molho Pomodoro',
+                'Massa fresca artesanal servida com molho pomodoro feito com tomates italianos San Marzano, alho, cebola caramelizada, manjericão fresco e azeite extra virgem. <br><br><strong>Peso:</strong> 360g <br><strong>Ingredientes:</strong> Massa fresca, tomate San Marzano, alho, cebola, manjericão, azeite. <br><strong>Descrição:</strong> Prato leve, aromático e refrescante, realçando a simplicidade da cozinha italiana. <br><strong>Dica:</strong> Harmoniza com vinho tinto jovem ou limonada siciliana.'
+            )">
+                <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Tagliatelle ao Molho Pomodoro">
+                <h4>Tagliatelle Pomodoro</h4>
+                <p>R$ 44,00</p>
+            </div>
+        </div>
+
+        <!-- CARNES -->
+        <h3 class="categoria">🥩 Carnes Selecionadas</h3>
+        <div class="grid">
+            <div class="card" onclick="abrirModal(
+                'Filé Mignon ao Molho de Vinho',
+                'Filé mignon alto, grelhado ao ponto, servido com molho de vinho tinto reduzido com fundo de carne, acompanhado de purê de batata rústico e legumes grelhados. <br><br><strong>Peso:</strong> 420g <br><strong>Ingredientes:</strong> Filé mignon, vinho tinto, manteiga, batata, ervas finas. <br><strong>Descrição:</strong> Prato suculento e sofisticado, equilibrando sabor intenso da carne com delicadeza do purê. <br><strong>Dica:</strong> Harmoniza com vinho tinto encorpado, como Malbec ou Cabernet Sauvignon.'
+            )">
+                <img src="https://images.unsplash.com/photo-1604908177522-6197f4adbe41?auto=format&fit=crop&w=800&q=80" alt="Filé Mignon ao Molho de Vinho">
+                <h4>Filé ao Vinho</h4>
+                <p>R$ 68,00</p>
+            </div>
+
+            <div class="card" onclick="abrirModal(
+                'Frango Mediterrâneo',
+                'Peito de frango marinado em ervas mediterrâneas, grelhado no ponto certo e servido com quinoa, legumes assados e molho de limão siciliano. <br><br><strong>Peso:</strong> 390g <br><strong>Ingredientes:</strong> Frango, quinoa, limão siciliano, alecrim, tomilho. <br><strong>Descrição:</strong> Prato leve e nutritivo, ideal para quem busca sabor e saúde. <br><strong>Dica:</strong> Acompanha suco verde ou vinho branco leve.'
+            )">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Frango Mediterrâneo">
+                <h4>Frango Mediterrâneo</h4>
+                <p>R$ 42,00</p>
+            </div>
+        </div>
+
+        <!-- SOBREMESAS -->
+        <h3 class="categoria">🍰 Sobremesas</h3>
+        <div class="grid">
+            <div class="card" onclick="abrirModal(
+                'Cheesecake de Frutas Vermelhas',
+                'Cheesecake cremoso feito com cream cheese e baunilha natural, servido com calda de frutas vermelhas frescas. <br><br><strong>Peso:</strong> 180g <br><strong>Descrição:</strong> Doce equilibrado, textura suave e sabor levemente ácido das frutas, ideal para finalizar a refeição. <br><strong>Dica:</strong> Harmoniza com chá de frutas ou espumante doce.'
+            )">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Cheesecake de Frutas Vermelhas">
+                <h4>Cheesecake Vermelhas</h4>
+                <p>R$ 22,00</p>
+            </div>
+
+            <div class="card" onclick="abrirModal(
+                'Petit Gateau',
+                'Bolo de chocolate com exterior crocante e interior cremoso, servido com sorvete artesanal de creme. <br><br><strong>Peso:</strong> 150g <br><strong>Descrição:</strong> Sobremesa quente e gelada ao mesmo tempo, intensa e marcante. <br><strong>Dica:</strong> Harmoniza com café espresso ou licor de chocolate.'
+            )">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80" alt="Petit Gateau">
+                <h4>Petit Gateau</h4>
+                <p>R$ 24,00</p>
+            </div>
+        </div>
+
+        <!-- BEBIDAS -->
+        <h3 class="categoria">🥤 Bebidas</h3>
+        <div class="grid">
+            <div class="card" onclick="abrirModal(
+                'Suco Verde Refrescante',
+                'Mistura de abacaxi, hortelã, gengibre e água de coco. Refrescante, nutritivo e cheio de vitaminas. <br><br><strong>Volume:</strong> 350ml <br><strong>Descrição:</strong> Bebida leve, energizante e ótima para acompanhar pratos leves ou sobremesas.'
+            )">
+                <img src="https://images.unsplash.com/photo-1553531384-cc64ac80f931?auto=format&fit=crop&w=800&q=80" alt="Suco Verde">
+                <h4>Suco Verde</h4>
+                <p>R$ 14,00</p>
+            </div>
+
+            <div class="card" onclick="abrirModal(
+                'Limonada Siciliana',
+                'Limonada feita com limões sicilianos frescos, açúcar orgânico e raspas da casca, aromática e refrescante. <br><br><strong>Volume:</strong> 400ml <br><strong>Descrição:</strong> Ideal para dias quentes ou como acompanhamento de refeições leves.'
+            )">
+                <img src="https://images.unsplash.com/photo-1590080870726-52f0b80a9954?auto=format&fit=crop&w=800&q=80" alt="Limonada Siciliana">
+                <h4>Limonada Siciliana</h4>
+                <p>R$ 12,00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section id="historia" class="section">
+        <h2>Nossa História</h2>
+        <p>
+            O Sabores da Casa nasceu de uma pequena cozinha familiar, onde receitas eram transmitidas de geração em geração.  
+            Ao longo do tempo, nossas preparações conquistaram clientes pela atenção aos detalhes, qualidade dos ingredientes e sabor único.  
+            Hoje, oferecemos experiências gastronômicas que unem tradição, criatividade e paixão pela culinária.
+        </p>
+    </section>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="fecharModal" class="close">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalDescricao"></p>
+        </div>
+    </div>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <p>Email: contato@saboresdacasa.com</p>
+        <p>WhatsApp: (11) 98888-7777</p>
+        <p>Endereço: Rua dos Sabores, 123 — Centro</p>
+        <p>Horário: Segunda a Domingo • 11h às 23h</p>
+    </section>
+
+    <footer>
+        © 2025 Sabores da Casa — Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
